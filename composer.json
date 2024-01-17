@@ -1,8 +1,7 @@
 {
-    "name": "kambo/langchain",
+    "name": "akramzerarka/langchain",
     "description": " ⚡ Building applications with LLMs through composability in PHP ⚡ ",
     "keywords": [
-        "kambo",
         "langchain"
     ],
     "homepage": "https://github.com/kambo/langchain",
@@ -12,14 +11,21 @@
             "name": "Bohuslav Šimek",
             "email": "bohuslav@simek.si",
             "role": "Developer"
+        },
+        {
+            "name": "Akram Zerarka",
+            "email": "akram.zerarka@gmail.com",
+            "role": "Developer"
         }
     ],
     "require": {
         "php": "^8.1",
-        "openai-php/client": "^0.3.5",
+        "nyholm/psr7": "^1.8",
+        "openai-php/client": "^0.8.1",
         "psr/simple-cache": "^3.0",
         "ramsey/uuid": "^4.7",
-        "stechstudio/backoff": "^1.2"
+        "stechstudio/backoff": "^1.2",
+        "symfony/http-client": "^7.0"
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3.13",
@@ -46,7 +52,8 @@
         "sort-packages": true,
         "allow-plugins": {
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "php-http/discovery": true
         }
     },
     "minimum-stability": "dev",
